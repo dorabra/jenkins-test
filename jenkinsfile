@@ -1,5 +1,8 @@
 
 pipeline {
+    parameters {
+        string(name="test", defaultValue="test", description="test")
+    }
     agent any
 
     stages {
